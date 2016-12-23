@@ -15,4 +15,5 @@ describe 'chef_test_5::default' do
 
   it '' do
     expect(chef_run).to install_windows_feature('Hyper-V-PowerShell')
+  end
 end
