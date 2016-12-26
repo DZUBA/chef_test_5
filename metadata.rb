@@ -1,4 +1,4 @@
-name 'chef_task_5'
+name 'chef_test_5'
 maintainer 'Alex Dzyubenko'
 maintainer_email 'zzzdzuba@gmail.com'
 license 'all_rights'
