@@ -6,9 +6,6 @@ provisioner:
   name: chef_zero
   always_update_cookbooks: false
 
-verifier:
-  name: inspec
-
 trasport:
   name: winrm
   elevated: true
@@ -22,7 +19,3 @@ suites:
   - name: default
     run_list:
       - recipe[chef_test_5::default]
-    verifier:
-      inspec_tests:
-        - test/intgration/package/serverspec/default_spec.rb
-    attributes:
