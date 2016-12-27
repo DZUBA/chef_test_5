@@ -4,7 +4,7 @@ driver:
 
 provisioner:
   name: chef_zero
-  always_update_cookbooks: true
+  always_update_cookbooks: false
 
 verifier:
   name: inspec
@@ -24,5 +24,5 @@ suites:
       - recipe[chef_test_5::default]
     verifier:
       inspec_tests:
-        - test/intgration/default_spec.rb
+        - test/intgration/package/serverspec/default_spec.rb
     attributes:
