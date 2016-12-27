@@ -3,7 +3,7 @@ require 'serverspec'
 set :backend, :cmd
 set :os, family: 'windows'
 
-describe file('C:\\Program Files\\Greenshot\\Greenshot.exe') do
+describe package('Greenshot 1.2.9.104') do
   it { should exist }
 end
 
