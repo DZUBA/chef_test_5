@@ -11,8 +11,8 @@ windows_feature 'Hyper-V-PowerShell' do
 end
 
 # Installing GreenShot via windows_package
-windows_package 'Greenshot 1.2.9.104' do
-  source 'https://github.com/greenshot/greenshot/releases/download/Greenshot-RELEASE-1.2.9.104/Greenshot-INSTALLER-1.2.9.104-RELEASE.exe'
+windows_package node['windows']['package'] do
+  source node['windows']['package_source']
   options '-ms'
   action :install
   installer_type :inno
